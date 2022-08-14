@@ -3,18 +3,17 @@ import Grocery from "./Grocery";
 import "./grocery.css";
 import OrderSummary from "./orderSummary";
 import "./orderSummary.css"
+import productsData from "./productsData.js";
 function App() {
   return (
     <div className="App">
       <div className="groceriesList">
         <h2 className="listTitle">Groceries List</h2>
-        <Grocery name="grocery 1" price="1,000,000$" quantity="1"></Grocery>
-        <Grocery name="grocery 1" price="1,000,000$" quantity="1"></Grocery>
-        <Grocery name="grocery 1" price="1,000,000$" quantity="1"></Grocery>
-        <Grocery name="grocery 1" price="1,000,000$" quantity="1"></Grocery>
-        <Grocery name="grocery 1" price="1,000,000$" quantity="1"></Grocery>
-        <Grocery name="grocery 1" price="1,000,000$" quantity="1"></Grocery>
-        <Grocery name="grocery 1" price="1,000,000$" quantity="1"></Grocery>
+        {productsData.map(product => <Grocery
+        key={product.name}
+        name={product.name}
+        price={`${product.price}$`}
+        quantity={product.quantity}></Grocery>)}
       </div>
 
       <div className="shoppingList">
