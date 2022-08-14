@@ -1,0 +1,17 @@
+.App{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.shoppingList{
+  margin-right: 20px;
+}
+.groceriesList{
+  margin-left: 20px;
+}
+
+.listTitle{
+  text-align: center;
+}
+
