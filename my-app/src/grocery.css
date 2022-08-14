@@ -5,7 +5,8 @@
     width: 300px;
     height: 100px;
     padding-left: 10px;
-    margin: 10px
+    margin: 10px;
+    border: 0;
   }
   .groceryThumbnail{
     margin-top: 5px;
@@ -20,4 +21,7 @@
   .groceryInfo p:nth-child(n){
     margin-block-start: 0px;
     margin-block-end: 2px;
+  }
+  .grocery:hover{
+    cursor: pointer;
   }
